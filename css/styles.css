@@ -12,6 +12,10 @@ body {
   line-height: 1.5;
 }
 
+.header {
+  width: 1440px;
+}
+
 h1,
 h2,
 h3,
@@ -23,6 +27,14 @@ p {
   margin-bottom: 0;
 }
 
+.container-nav {
+  gap: 40px;
+}
+
+.topflex {
+  display: inline-flex;
+}
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -31,6 +43,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -68,6 +81,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 25.5px 0;
+}
+
+.navigation-item {
+  padding: 24px 0;
 }
 
 .logo {
@@ -95,11 +113,21 @@ img {
 
 .address {
   font-style: normal;
+  display: inline;
 }
+
+.navigation {
+  display: inline;
+}
+
 .address-info {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: currentColor;
+  padding: 24px 0;
+}
+
+.address-item {
 }
 
 .footer {
