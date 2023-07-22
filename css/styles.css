@@ -36,8 +36,6 @@ ul {
 
 .container {
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -58,6 +56,8 @@ ul {
   padding-top: 24px;
   padding-bottom: 24px;
   max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 img {
@@ -146,14 +146,18 @@ img {
 
 .list-advantages {
   display: flex;
-  padding-top: 120px;
   gap: 24px;
+}
+
+.section-heading {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .item-advantages {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .logo-footer {
@@ -162,7 +166,8 @@ img {
 
 .section-subject {
   background-color: var(--background-footer);
-  height: 600px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .container-subject {
@@ -182,7 +187,7 @@ img {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
 }
 
 .title-button {
@@ -196,6 +201,9 @@ img {
   letter-spacing: 0.04em;
   padding: 16px 23px;
   border-radius: 4px;
+  min-width: 169px;
+  border: none;
+  height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .title-button:hover,
@@ -211,12 +219,16 @@ img {
   letter-spacing: 0.04em;
   color: var(--brand-color);
   background-color: var(--cloud);
+  padding: 12px 24px;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .button {
@@ -229,6 +241,7 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .subtitle-text {
@@ -237,7 +250,7 @@ img {
 }
 
 .section-headline {
-  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits-list {
@@ -250,6 +263,8 @@ img {
 
 .section-caption {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .benefits {
@@ -259,6 +274,7 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .title-team {
@@ -268,12 +284,14 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+
+.employee {
+  padding: 32px 0;
 }
 
 .container-caption {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .title-team-list {
@@ -285,9 +303,6 @@ img {
 
 .title-team-item {
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -301,11 +316,13 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .profession {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .button {
@@ -323,7 +340,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .mark {
@@ -340,7 +357,7 @@ img {
 
 .footer {
   background-color: var(--background-footer);
-  height: 312px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -352,6 +369,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -378,6 +397,7 @@ img {
   padding-top: 96px;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 
 .section-filter-item {
@@ -387,12 +407,22 @@ img {
 .list-filter {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 96px;
   column-gap: 24px;
-  row-gap: 54px;
+  row-gap: 48px;
   padding-bottom: 120px;
 }
 
 .upper-item {
   width: calc((100% - 48px) / 3);
+}
+
+.upper-item-zero {
+  margin-bottom: 0;
+}
+
+.product-filt {
+  padding: 32px 16px;
+  border: 1px solid var(--color-accent);
+  border-top: none;
 }
